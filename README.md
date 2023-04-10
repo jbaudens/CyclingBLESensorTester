@@ -1,5 +1,4 @@
-# CyclingBLESensorTester
-CyclingBLESensorTester
+# Cycling BLE Sensor Tester
 
 This is a really simple macOS app develop using SwiftUI.
 
