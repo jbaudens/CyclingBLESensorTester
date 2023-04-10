@@ -14,6 +14,13 @@
 		C8587E8229DDF9C600CB6305 /* CyclingBLESensorTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587E8129DDF9C600CB6305 /* CyclingBLESensorTesterTests.swift */; };
 		C8587E8C29DDF9C600CB6305 /* CyclingBLESensorTesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587E8B29DDF9C600CB6305 /* CyclingBLESensorTesterUITests.swift */; };
 		C8587E8E29DDF9C600CB6305 /* CyclingBLESensorTesterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587E8D29DDF9C600CB6305 /* CyclingBLESensorTesterUITestsLaunchTests.swift */; };
+		C8587EA029DDFB2900CB6305 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587E9F29DDFB2900CB6305 /* BLE.swift */; };
+		C8587EA429DDFF7A00CB6305 /* CyclingPowerParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587EA229DDFF7A00CB6305 /* CyclingPowerParser.swift */; };
+		C8587EA529DDFF7A00CB6305 /* HeartRateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587EA329DDFF7A00CB6305 /* HeartRateParser.swift */; };
+		C8587EA829DE083E00CB6305 /* BLEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587EA729DE083E00CB6305 /* BLEViewModel.swift */; };
+		C8587EAA29DE08FA00CB6305 /* BLESensorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587EA929DE08FA00CB6305 /* BLESensorModel.swift */; };
+		C8587EAC29DE0D3600CB6305 /* BLESensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587EAB29DE0D3600CB6305 /* BLESensorView.swift */; };
+		C8587EAF29DFBCE000CB6305 /* CyclingSpeedAndCadence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8587EAE29DFBCE000CB6305 /* CyclingSpeedAndCadence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,14 @@
 		C8587E8729DDF9C600CB6305 /* CyclingBLESensorTesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyclingBLESensorTesterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8587E8B29DDF9C600CB6305 /* CyclingBLESensorTesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingBLESensorTesterUITests.swift; sourceTree = "<group>"; };
 		C8587E8D29DDF9C600CB6305 /* CyclingBLESensorTesterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingBLESensorTesterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8587E9F29DDFB2900CB6305 /* BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		C8587EA229DDFF7A00CB6305 /* CyclingPowerParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CyclingPowerParser.swift; path = ../../../../CyclingBLESensorTesting/CyclingBLESensorTesting/BLE/BLEParsers/CyclingPowerParser.swift; sourceTree = "<group>"; };
+		C8587EA329DDFF7A00CB6305 /* HeartRateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeartRateParser.swift; path = ../../../../CyclingBLESensorTesting/CyclingBLESensorTesting/BLE/BLEParsers/HeartRateParser.swift; sourceTree = "<group>"; };
+		C8587EA729DE083E00CB6305 /* BLEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewModel.swift; sourceTree = "<group>"; };
+		C8587EA929DE08FA00CB6305 /* BLESensorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLESensorModel.swift; sourceTree = "<group>"; };
+		C8587EAB29DE0D3600CB6305 /* BLESensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLESensorView.swift; sourceTree = "<group>"; };
+		C8587EAD29DE118000CB6305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C8587EAE29DFBCE000CB6305 /* CyclingSpeedAndCadence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingSpeedAndCadence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +110,11 @@
 		C8587E6E29DDF9C500CB6305 /* CyclingBLESensorTester */ = {
 			isa = PBXGroup;
 			children = (
+				C8587EAD29DE118000CB6305 /* Info.plist */,
+				C8587EA629DE077900CB6305 /* ViewModels */,
+				C8587E9E29DDFB1900CB6305 /* BLE */,
+				C8587E9B29DDFA9800CB6305 /* Models */,
+				C8587E9A29DDF9D800CB6305 /* Views */,
 				C8587E6F29DDF9C500CB6305 /* CyclingBLESensorTesterApp.swift */,
 				C8587E7129DDF9C500CB6305 /* ContentView.swift */,
 				C8587E7329DDF9C600CB6305 /* Assets.xcassets */,
@@ -127,6 +147,49 @@
 				C8587E8D29DDF9C600CB6305 /* CyclingBLESensorTesterUITestsLaunchTests.swift */,
 			);
 			path = CyclingBLESensorTesterUITests;
+			sourceTree = "<group>";
+		};
+		C8587E9A29DDF9D800CB6305 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C8587EAB29DE0D3600CB6305 /* BLESensorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8587E9B29DDFA9800CB6305 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8587EA929DE08FA00CB6305 /* BLESensorModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8587E9E29DDFB1900CB6305 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				C8587EA129DDFF6800CB6305 /* Parsers */,
+				C8587E9F29DDFB2900CB6305 /* BLE.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		C8587EA129DDFF6800CB6305 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				C8587EA229DDFF7A00CB6305 /* CyclingPowerParser.swift */,
+				C8587EA329DDFF7A00CB6305 /* HeartRateParser.swift */,
+				C8587EAE29DFBCE000CB6305 /* CyclingSpeedAndCadence.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		C8587EA629DE077900CB6305 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8587EA729DE083E00CB6305 /* BLEViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8587EA529DDFF7A00CB6305 /* HeartRateParser.swift in Sources */,
 				C8587E7229DDF9C500CB6305 /* ContentView.swift in Sources */,
+				C8587EA029DDFB2900CB6305 /* BLE.swift in Sources */,
+				C8587EA429DDFF7A00CB6305 /* CyclingPowerParser.swift in Sources */,
+				C8587EA829DE083E00CB6305 /* BLEViewModel.swift in Sources */,
+				C8587EAA29DE08FA00CB6305 /* BLESensorModel.swift in Sources */,
+				C8587EAF29DFBCE000CB6305 /* CyclingSpeedAndCadence.swift in Sources */,
+				C8587EAC29DE0D3600CB6305 /* BLESensorView.swift in Sources */,
 				C8587E7029DDF9C500CB6305 /* CyclingBLESensorTesterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +494,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CyclingBLESensorTester/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "\"uses ble\"";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "\"uses ble\"";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +524,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CyclingBLESensorTester/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "\"uses ble\"";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "\"uses ble\"";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

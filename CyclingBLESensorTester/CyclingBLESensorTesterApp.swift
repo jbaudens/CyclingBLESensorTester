@@ -11,7 +11,7 @@ import SwiftUI
 struct CyclingBLESensorTesterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(bleViewModel: BLEViewModel())
         }
     }
 }
